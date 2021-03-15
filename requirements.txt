@@ -3,5 +3,6 @@ TgCrypto
 py-tgcalls
 git+https://github.com/pytgcalls/pytgcalls
 python-dotenv
+git+https://github.com/socketio/socket.io-client
 youtube_dl
 youtube_search_python
