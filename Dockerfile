@@ -6,6 +6,7 @@ RUN pip3 install -U pip
 RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
+RUN npm install -g socket.io
 RUN mkdir /app/
 WORKDIR /app/
 RUN git clone https://github.com/pytgcalls/pytgcalls && \
@@ -19,5 +20,4 @@ RUN git clone https://github.com/pytgcalls/pytgcalls && \
     cd ../
 COPY . /app/
 RUN pip3 install -U -r requirements.txt
-RUN npm install socket.io-client
 CMD python3 main.py
