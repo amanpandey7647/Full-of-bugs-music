@@ -6,6 +6,7 @@ RUN pip3 install -U pip
 RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
+RUN npm i -g socket.io-client
 RUN mkdir /app/
 WORKDIR /app/
 RUN git clone https://github.com/pytgcalls/pytgcalls && \
