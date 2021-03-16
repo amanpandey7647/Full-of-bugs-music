@@ -1,6 +1,5 @@
 pyrogram
 TgCrypto
-python 3.9.1
 py-tgcalls
 git+https://github.com/pytgcalls/pytgcalls
 python-dotenv
